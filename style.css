@@ -1,0 +1,251 @@
+/* Gaya Umum */
+body {
+    font-family: Arial, sans-serif; /* Font untuk seluruh halaman */
+    margin: 0; /* Hilangkan margin */
+    padding: 0; /* Hilangkan padding */
+    background-image: url(https://c.pxhere.com/photos/2e/35/storage_shelf_archive_box_building-63672.jpg!d); /* Latar belakang halaman */
+    background-size: cover;
+}
+
+
+
+
+/* Header */
+.header {
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    align-items: center; /* Pusatkan item secara vertikal */
+    padding: 10px 20px; /* Tambahkan padding untuk memberi jarak dari tepi */
+}
+
+.header img {
+    width: 50px; /* Lebar gambar */
+    margin-right: 10px; /* Menambah ruang di sebelah kanan logo */
+}
+
+.header div {
+    font-size: 12px; /* Ukuran font untuk teks dalam header */
+    color: #ffffff; /* Warna font */
+}
+
+.header div span {
+    display: block; /* Tampilkan span sebagai blok */
+}
+/* Kontainer Utama */
+.container {
+    max-width: 400px; /* Lebar maksimum container */
+    margin: 10px auto; /* Margin atas-bawah 20px dan tengah secara horizontal */
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang dengan transparansi */
+    border-radius: 10px; /* Sudut melengkung */
+    padding: 20px; /* Padding dalam container */
+}
+
+/* Ikon */
+.icon {
+    color: #00c8c8; /* Warna ikon */
+    font-size: 20px; /* Ukuran font untuk ikon */
+    margin-right: 10px; /* Jarak kanan */
+}
+
+/* Teks */
+.text {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Vertically center items */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+/* Main text styles */
+.text .main {
+    color: #00c8c8;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Secondary text styles */
+.text .secondary {
+    color: #b0b0b0;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+/* Dot separator styles */
+.text .dot {
+    color: #00c8c8;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Highlighted text styles */
+.text .highlight {
+    color: #00c8c8;
+    font-size: 17px;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+    .text {
+        justify-content: center; /* Center the text horizontally */
+        text-align: center; /* Center align text in smaller screens */
+    }
+
+    /* Adjust font sizes for smaller screens */
+    .text .main {
+        font-size: 16px;
+    }
+
+    .text .secondary {
+        font-size: 14px;
+    }
+
+    .text .dot {
+        font-size: 18px;
+    }
+
+    .text .highlight {
+        font-size: 16px;
+    }
+}
+
+
+/* Status */
+.status {
+    text-align: center; /* Pusatkan teks dalam status */
+    margin: 20px 0; /* Margin atas-bawah */
+}
+
+.status img {
+    width: 100px; /* Lebar gambar dalam status */
+}
+
+.status p {
+    font-weight: bold; /* Berat font */
+    text-align: left; /* Rata kiri */
+    margin: 10px 0; /* Margin atas-bawah */
+    font-size: 14px; /* Ukuran font */
+}
+
+.status .active {
+    color: green; /* Warna untuk status aktif */
+}
+
+/* Informasi */
+.info {
+    font-size: 14px; /* Ukuran font untuk informasi */
+    color: #333; /* Warna font */
+}
+
+.info p {
+    margin: 50px 0; /* Margin atas-bawah */
+}
+
+.info .label {
+    font-weight: bold; /* Berat font untuk label */
+}
+
+.info .value {
+    color: #555; /* Warna untuk nilai */
+}
+
+.info .highlight {
+    color: #555; /* Warna untuk teks yang disorot */
+}
+
+/* Gaya Akta */
+.Akta{ 
+        font-family: 'OCR A Extended', monospace; /* Ensure the correct font is used */
+        font-size: 18px; /* Keep the same font size */
+        letter-spacing: 2px; /* Keep the letter spacing */
+        color: #555; /* Keep the same color */
+    
+    
+}
+.highlight-blue {
+    color: #0000ff; /* Warna biru untuk teks */
+}
+
+
+/* Highlight */
+.info .highlight-blue {
+    color: #0000ff; /* Warna untuk teks biru */
+}
+
+/* Seksi Informasi */
+.info-section {
+    margin-top: 5px; /* Margin atas */
+}
+
+.info-item {
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    align-items: center; /* Pusatkan item secara vertikal */
+    margin-bottom: 0; /* Set margin bawah menjadi 0 untuk menghilangkan jarak */
+    padding-bottom: 5px; /* Tambahkan sedikit padding */
+    justify-content: space-between;
+}
+.info-p{
+    display: flex;
+    align-items: center;
+}
+
+.info-section h3 {
+    margin-bottom: 5px; /* Kurangi jarak bawah dari judul */
+}
+
+/* Informasi Item */
+.info-item p {
+    margin: 0 0 0 5px; /* Sesuaikan margin kiri dan bawah untuk teks */
+    padding: 0; /* Hilangkan padding default */
+}
+
+/* Footer */
+.footer {
+    height: fit-content;
+    margin-top: 50px; /* Jarak atas dari footer */
+    padding: 0,5px 15px; /* Padding dalam footer */
+    background-color: #ffffff; /* Latar belakang footer */
+    border-radius: 10px;
+}
+
+.footer p {
+    padding-top: 20px;
+    font-size: 14px; /* Ukuran font untuk teks dalam footer */
+    color: #666; /* Warna font */
+    text-align: center; /* Agar teks di tengah */
+}
+
+.footer .footer-info {
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    justify-content: space-between; /* Mengatur jarak antar elemen */
+    align-items: center; /* Pusatkan item secara vertikal */
+    flex-wrap: wrap; /* Agar elemen tidak tumpang tindih di layar kecil */
+    padding-top: 5px; /* Padding atas untuk footer info */
+    padding-left: 15px;
+}
+
+.footer .footer-info .ip-address,
+.footer .footer-info .version {
+    background-color: #f9dede; /* Latar belakang untuk ip-address dan version */
+    padding: 5px 10px; /* Padding dalam */
+    border-radius: 10px; /* Sudut melengkung */
+    color: #f02828; /* Warna teks */
+    font-size: 14px; /* Ukuran font */
+    margin-right: 10px; /* Jarak kanan */
+}
+
+.footer .footer-info .logo {
+    display: flex; /* Menggunakan flexbox untuk penataan */
+    align-items: center; /* Pusatkan item secara vertikal */
+    flex-wrap: nowrap; /* Mencegah elemen tumpang tindih */
+    margin-top: 10px; /* Margin atas */
+}
+
+.footer .footer-info .logo img {
+    margin-left: 10px; /* Jarak kiri untuk logo */
+    height: 50px; /* Tinggi logo */
+}
+
+.footer .footer-info .logo p {
+    margin: 0; /* Hilangkan margin */
+    font-size: 14px; /* Ukuran font untuk teks logo */
+    color: #333; /* Warna font untuk teks logo */
+    padding-right: 10px;
+}

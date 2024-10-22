@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Status</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+   <link rel="stylesheet" href="style.css">
+   <link href="https://fonts.googleapis.com/css2?family=OCR+A+Extended&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="OCRAEXT.TTF">
+   <div class="header">
+    <img alt="Government Logo" height="50" src="https://disdukcapil.tangerangkota.go.id/assets/uploads/partner_20221219_1671426359.png" width="50" />
+    <div>
+        <span>DIREKTORAT JENDERAL KEPENDUDUKAN DAN PENCATATAN SIPIL</span>
+        <span>KEMENTERIAN DALAM NEGERI REPUBLIK INDONESIA</span>
+    </div>
+</div>
+</head>
+
+<body>
+    <div class="container">
+        <div><div class="text"><i class="fas fa-folder-open icon"></i>
+            <div class="text">
+            <span class="main">KEMATIAN</span>
+            <span class="secondary">Pindai Dokumen</span>
+            <span class="dot">•</span>
+            <span class="highlight">Terpusat</span>
+        </div></div>
+
+        <div class="status">
+            <img alt="Document Status Icon" height="100" src="https://www.svgrepo.com/show/92783/checked.svg" width="100" />
+            <p class="label">Status dokumen</p>
+            <p class="active">AKTIF</p>
+        </div>
+
+        <div class="info">
+            <p><span class="label">Nama Lengkap</span> <br /> <span class="value">IRMAN ZASA</span></p>
+            <p><span class="label">Tanggal Kematian</span> <br /> <span class="value">02-10-2024</span></p>
+            <p>
+                <span class="label">No. Akta</span> <br /> 
+                <span class="Akta">3507-KM-08102024-0<span class="highlight-blue">***</span></span>
+            </p>
+
+            <div class="info-section">
+                <h3> <span class="label" style="color: darkblue;">Info Penandatangan:</span><br /></h3>
+                <p><span class="label">Daerah</span> <br /> <span class="value">PEMERINTAH KABUPATEN MALANG</span></p>
+                <p><span class="label">Penandatangan</span> <br /> <span class="highlight">HARRY SETIA BUDU, S.STP,.M.SI</span></p>
+            </div>
+
+            <div class="info-section">
+                <h3><span class="label" style="color: darkblue;">Informasi:</span><br /></h3>
+                <div class="info-item">
+                    <div class="info-p">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p>Tanggal Pindai</p>
+                    </div>
+                    <div class="info-p">
+                        <p id="scan-date"></p> <!-- Elemen untuk tanggal pemindaian -->
+                        <i class="fas fa-clock"></i>
+                        <p id="scan-time"></p> <!-- Elemen untuk waktu pemindaian -->
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+            <div class="info-item">
+                <div class="info-p">
+                    <i class="fas fa-calendar-alt"></i>
+                    <p>Tgl. Penandatanganan</p>
+                </div>
+                <div class="info-p">
+                    <p>08/10/2024</p>
+                    <i class="fas fa-clock"></i>
+                    <p>13.42.08</p>
+                </div>
+            </div>
+            <script>
+                function updateDateTime() {
+                    var now = new Date();
+                    var date = now.toLocaleDateString(); // Mengambil tanggal dalam format lokal
+                    var time = now.toLocaleTimeString(); // Mengambil waktu dalam format lokal
+                    
+                    // Menampilkan tanggal dan waktu di elemen HTML
+                    document.getElementById('scan-date').textContent = date;
+                    document.getElementById('scan-time').textContent = time;
+                }
+            
+                // Panggil fungsi saat halaman dimuat
+                window.onload = updateDateTime;
+            </script>
+                        
+
+                        <div class="footer">
+                            <p>Dokumen ini telah ditandatangani secara elektronik menggunakan sertifikat elektronik yang diterbitkan oleh Balai Sertifikasi Elektronik (BSrE), BSSN</p>
+                            
+                            <div class="footer-info">
+                                <div class="ip-address">Alamat IP: 36.75.209.120</div>
+                                <div class="version">Versi: 82.0.1</div>
+                                <div class="logo">
+                                    <p>Ditjen Dukcapil Kemendagri SIAK Integrasi</p>
+                                    <img alt="Logo Balai Sertifikasi Elektronik" src="https://api-tte.kominfo.go.id/images/organizers/6623bb398bf689e0d9e3513980ae7498.png" />
+                                </div>
+                            </div>
+                        </div>
+                        
+</html>
